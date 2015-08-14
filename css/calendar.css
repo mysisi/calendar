@@ -1,0 +1,246 @@
+@charset "utf-8";
+/* CSS Document v1.7更新了calendarBar的样式*/
+* {margin:0;padding: 0}
+input::-ms-clear{display:none;}
+fieldset, img, button {border:0;vertical-align:middle;}
+table {border-spacing:0;border-collapse:collapse;}
+li, ol {list-style-type:none;}
+h1, h2, h3, h4, h5, h6 {font-size:100%;}
+em, cite, i {font-style:normal;}
+body {color: #333333; font: 14px/1.2 "微软雅黑",arial,Tahoma,"SimSun",sans-serif; background:#fff;}
+a {color: #0078b6; cursor: pointer; text-decoration: none;}
+a:hover {color: #FF0000;text-decoration: none;}
+
+.calendar{
+    width: 626px;
+    padding: 15px;
+    margin:5px;
+    border: 1px #cccccc solid;
+}
+
+.calendarBar{
+    overflow: hidden;
+}
+
+div.calendarMain table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    /*clear: both;*/
+}
+
+.calendar-panel td {
+    font-size: 12px;
+}
+
+.calendar-panel .ds-date-othermonth {
+    cursor: default;
+}
+
+/* 周日到周一
+.calendar-week-head{*/
+    /*color:#666;*/
+/*}*/
+
+.calendar-title {
+    -webkit-transition: background-image .5s ease;
+    -moz-transition: background-image .5s ease;
+    -ms-transition: background-image .5s ease;
+    -o-transition: background-image .5s ease;
+    transition: background-image .5s ease;
+    background-repeat: no-repeat;
+    background-position: left -2754px;
+    height: 22px;
+    text-align: center;
+    margin: 0 0 2px;
+    cursor: default;
+    line-height: 21px;
+    color: #0965b8;
+    text-shadow: 0 1px 0 #fff;
+    font-family: "Microsoft Yahei", Tahoma, Verdana;
+    /*background-color: #d6e4ee;*/
+    font-weight: bolder;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.table-main {
+    cellpadding:0;
+    border:0;
+}
+
+.cal-prevmonth {
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image: url('../image/left1.png');
+    width: 23px;
+    height: 207px;
+    cursor: pointer;
+    margin: 0 5px 0 0;
+}
+
+.cal-prevmonth:hover {
+    background-image: url('../image/left2.png');
+}
+
+.cal-nextmonth {
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image: url('../image/right1.png');
+    width: 23px;
+    height: 207px;
+    cursor: pointer;
+    margin: 0 0 0 5px;
+}
+
+.cal-nextmonth:hover {
+    background-image: url('../image/right2.png');
+}
+
+.table-cell-free {
+    cursor: pointer;
+    color:#444444;
+}
+
+.table-cell-selected {
+    cursor: pointer;
+    color: white;
+    /*background: #5672CC;*/
+    background: #1eb242;
+}
+
+.table-cell-occupied {
+    cursor: default;
+    color: white;
+    background: #cccccc;
+}
+
+.table-cell-empty {
+    border: 1px solid #e0e0e0;
+}
+
+.table-cell-pending{
+    cursor: default;
+    color: white;
+    /*background: #7090f8;*/
+    background: #7ae969;
+}
+
+.calender-cell {
+    padding-right: 12px;
+}
+
+.calender-cell-last {
+    padding-right: 0;
+}
+
+.calender-cell td {
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    font-size: 10px;
+    font-family: "Microsoft Yahei", Tahoma, Verdana;
+    line-height: 20px;
+}
+
+.calender-cell thead td {
+    /*background: #e8e8e8;*/
+    /*border: 1px solid #e8e8e8;*/
+    margin-bottom: 2px;
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+.calender-cell tbody td {
+    border: 1px solid #e0e0e0;
+    font-weight: bolder;
+}
+
+.calender-cell .single .ds-week {
+    background: none;
+}
+
+.calender-cell thead .ds-week {
+    background: none;
+}
+
+.l-g-radio {
+    padding-right: 20px
+}
+
+.calendarBtn{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.a-btn {
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 8px;
+    color: #fff !important;
+    font-family: "Microsoft Yahei", Tahoma, Verdana;
+    margin: 3px 10px;
+}
+.subbtn {
+    background: #556fa8;
+    cursor: pointer;
+}
+.canclbtn{
+    background: #9ca7a8;
+    cursor: default;
+}
+
+.range-choice{
+    margin: 5px 20px;
+    float: left;
+    width: 270px;
+    border-right: 1px #eeeeee solid;
+}
+
+.single-choice{
+    margin: 5px 20px;
+    float: right;
+    width: 270px;
+}
+
+
+.range-choice div{
+    font-family: "Microsoft Yahei", Tahoma, Verdana;
+    font-size: 12px;
+}
+
+.range-choice p{
+    color: #888888;
+}
+
+.range-choice a {
+    height: 13px;
+    line-height: 13px;
+    margin: 7px 5px 0 0;
+    color: #0078b6;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.range-choice a:hover {
+    color: #77b2ff;
+}
+
+
+.single-choice p{
+    font-family: "Microsoft Yahei", Tahoma, Verdana;
+    font-size: 12px;
+    color: #888888;
+}
+
+.single-choice a {
+    height: 13px;
+    line-height: 13px;
+    margin: 7px 5px 0 0;
+    color: #0078b6;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.single-choice a:hover {
+    color: #77b2ff;
+}
